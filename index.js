@@ -9,7 +9,7 @@ const auth = new Auth({
     'sharedSecret': process.env.SHOPIFY_SECRET,
     'redirectUri': process.env.SHOPIFY_REDIRECT_URI,
     'scopes':  ['read_orders', 'read_products', 'read_customers',
-                'write_orders'] 
+                'write_orders', 'write_products'] 
 });
 
 const app = express();
